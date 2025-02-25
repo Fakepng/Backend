@@ -139,3 +139,31 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ### License
 
 This project is licensed under the MIT License.
+
+## MQTT
+
+# MQTT type
+
+1. dresssense/{SN}/{sensor}/stat_t
+2. dresssense/{SN}/{sensor}/cmd_t
+
+type of sensor
+
+- environment
+  - stat_t `{'t'=, 'h'=, 'p'=}`
+- particulatematter
+  - stat_t `{'pm1'=, 'pm25'=, 'pm10'=}`
+- door
+  - stat_t `['ON', 'OFF']`
+- light
+  - stat_t `['ON', 'OFF']`
+  - cmd_t `['ON', 'OFF']`
+- ventilation
+  - stat_t `['ON', 'OFF']`
+  - cmd_t `['ON', 'OFF']`
+- ozone
+  - stat_t `['ON', 'OFF']`
+  - cmd_t `['ON', 'OFF']`
+- uv
+  - stat_t `['ON', 'OFF']`
+  - cmd_t `['ON', 'OFF']`
